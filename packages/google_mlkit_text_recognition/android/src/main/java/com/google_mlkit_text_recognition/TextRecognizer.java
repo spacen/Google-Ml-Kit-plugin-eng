@@ -9,10 +9,10 @@ import androidx.annotation.NonNull;
 import com.google.mlkit.vision.common.InputImage;
 import com.google.mlkit.vision.text.Text;
 import com.google.mlkit.vision.text.TextRecognition;
-import com.google.mlkit.vision.text.chinese.ChineseTextRecognizerOptions;
-import com.google.mlkit.vision.text.devanagari.DevanagariTextRecognizerOptions;
-import com.google.mlkit.vision.text.japanese.JapaneseTextRecognizerOptions;
-import com.google.mlkit.vision.text.korean.KoreanTextRecognizerOptions;
+// import com.google.mlkit.vision.text.chinese.ChineseTextRecognizerOptions;
+// import com.google.mlkit.vision.text.devanagari.DevanagariTextRecognizerOptions;
+// import com.google.mlkit.vision.text.japanese.JapaneseTextRecognizerOptions;
+// import com.google.mlkit.vision.text.korean.KoreanTextRecognizerOptions;
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions;
 import com.google_mlkit_commons.InputImageConverter;
 
@@ -57,14 +57,14 @@ public class TextRecognizer implements MethodChannel.MethodCallHandler {
         switch (script) {
             case 0:
                 return TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS);
-            case 1:
-                return TextRecognition.getClient(new ChineseTextRecognizerOptions.Builder().build());
-            case 2:
-                return TextRecognition.getClient(new DevanagariTextRecognizerOptions.Builder().build());
-            case 3:
-                return TextRecognition.getClient(new JapaneseTextRecognizerOptions.Builder().build());
-            case 4:
-                return TextRecognition.getClient(new KoreanTextRecognizerOptions.Builder().build());
+            // case 1:
+            //     return TextRecognition.getClient(new ChineseTextRecognizerOptions.Builder().build());
+            // case 2:
+            //     return TextRecognition.getClient(new DevanagariTextRecognizerOptions.Builder().build());
+            // case 3:
+            //     return TextRecognition.getClient(new JapaneseTextRecognizerOptions.Builder().build());
+            // case 4:
+            //     return TextRecognition.getClient(new KoreanTextRecognizerOptions.Builder().build());
             default:
                 return null;
         }

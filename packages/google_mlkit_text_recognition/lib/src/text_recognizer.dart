@@ -37,10 +37,10 @@ class TextRecognizer {
 /// Configurations for [TextRecognizer] for different languages.
 enum TextRecognitionScript {
   latin,
-  chinese,
-  devanagiri,
-  japanese,
-  korean,
+  // chinese,
+  // devanagiri,
+  // japanese,
+  // korean,
 }
 
 /// Recognized text in an image.
